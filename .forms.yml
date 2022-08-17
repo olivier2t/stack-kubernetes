@@ -355,17 +355,17 @@ azure-aks:
         widget: simple_text
         type: string
         default: "10.8.0.0/14"
-      - name: "Private subnets"
-        description: "The private subnets cidr for the VPC."
-        key: module.vpc.subnets
-        widget: text_area
-        type: map
+#      - name: "Private subnets"
+#        description: "The private subnets cidr for the VPC."
+#        key: module.vpc.subnets
+#        widget: text_area
+#        type: map
 #        default:
 #          "nodes": "10.8.0.0/16"
 #          "pods": "10.9.0.0/16"
 #          "loadbalancers": "10.11.0.0/16"
         # type: raw
-        default: { "nodes": "10.8.0.0/16", "pods": "10.9.0.0/16", "loadbalancers": "10.11.0.0/16"}
+#        default: { "nodes": "10.8.0.0/16", "pods": "10.9.0.0/16", "loadbalancers": "10.11.0.0/16"}
 
     aks:
       - name: "AKS cluster network plugin"
