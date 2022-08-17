@@ -333,28 +333,28 @@ azure-aks:
         default: "master"
         required: true
 
-#  terraform:
-#    config:
-#      - name: "Resource Group Name"
-#        description: "Resource Group Name to use for the AKS Cluster"
-#        key: module.config.resource_group_name
-#        widget: simple_text
-#        type: string
-#        default: "($ project $)-($ environment $)-aks"
-#      - name: "Cluster name"
-#        description: "AKS Cluster name"
-#        key: module.config.cluster_name
-#        widget: simple_text
-#        type: string
-#        default: "($ project $)-($ environment $)"
+  terraform:
+    config:
+      - name: "Resource Group Name"
+        description: "Resource Group Name to use for the AKS Cluster"
+        key: module.config.resource_group_name
+        widget: simple_text
+        type: string
+        default: "($ project $)-($ environment $)-aks"
+      - name: "Cluster name"
+        description: "AKS Cluster name"
+        key: module.config.cluster_name
+        widget: simple_text
+        type: string
+        default: "($ project $)-($ environment $)"
 
-#    vpc:
-#      - name: "Address Space"
-#        description: "The virtual network address space."
-#        key: module.vpc.address_space
-#        widget: simple_text
-#        type: string
-#        default: "10.8.0.0/14"
+    vpc:
+      - name: "Address Space"
+        description: "The virtual network address space."
+        key: module.vpc.address_space
+        widget: simple_text
+        type: string
+        default: "10.8.0.0/14"
 #      - name: "Private subnets"
 #        description: "The private subnets cidr for the VPC."
 #        key: module.vpc.subnets
