@@ -333,7 +333,7 @@ azure-aks:
         default: "master"
         required: true
 
-  terraform:
+#  terraform:
 #    config:
 #      - name: "Resource Group Name"
 #        description: "Resource Group Name to use for the AKS Cluster"
