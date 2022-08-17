@@ -367,47 +367,47 @@ azure-aks:
 #        # type: raw
 #        default: { "nodes": "10.8.0.0/16", "pods": "10.9.0.0/16", "loadbalancers": "10.11.0.0/16"}
 
-    aks:
-      - name: "AKS cluster network plugin"
-        description: "AKS cluster network plugin to use, can be either `azure` or `kubenet`."
-        key: module.aks.network_plugin
-        widget: auto_complete
-        type: string
-        default: "azure"
-        values:
-            - "azure"
-            - "kubenet"
-      - name: "AKS cluster pod CIDR to use"
-        description: "AKS cluster pod CIDR to use, required if `network_plugin = kubenet`."
-        key: module.aks.network_pod_cidr
-        widget: text_area
-        type: string
-        default: "10.9.0.0/16"
-      - name: "AKS cluster pod CIDR to use"
-        description: "AKS cluster service CIDR to use, required if `network_plugin = azure`."
-        key: module.aks.network_service_cidr
-        widget: text_area
-        type: string
-        default: "10.10.0.0/16"
-      - name: "AKS node name"
-        description: "AKS default nodes pool given name."
-        key: module.aks.node_pool_name
-        widget: simple_text
-        type: string
-        default: "default"
-      - name: "Node size"
-        description: "AKS default nodes virtualmachine size."
-        key: module.aks.node_size
-        widget: simple_text
-        type: string
-        default: "Standard_DS2_v2"
-      - name: "Node desired number"
-        description: "AKS default nodes desired count."
-        key: module.aks.node_count
-        widget: simple_text
-        type: string
-        default: "1"
-        required: true
+#    aks:
+#      - name: "AKS cluster network plugin"
+#        description: "AKS cluster network plugin to use, can be either `azure` or `kubenet`."
+#        key: module.aks.network_plugin
+#        widget: auto_complete
+#        type: string
+#        default: "azure"
+#        values:
+#            - "azure"
+#            - "kubenet"
+#      - name: "AKS cluster pod CIDR to use"
+#        description: "AKS cluster pod CIDR to use, required if `network_plugin = kubenet`."
+#        key: module.aks.network_pod_cidr
+#        widget: text_area
+#        type: string
+#        default: "10.9.0.0/16"
+#      - name: "AKS cluster pod CIDR to use"
+#        description: "AKS cluster service CIDR to use, required if `network_plugin = azure`."
+#        key: module.aks.network_service_cidr
+#        widget: text_area
+#        type: string
+#        default: "10.10.0.0/16"
+#      - name: "AKS node name"
+#        description: "AKS default nodes pool given name."
+#        key: module.aks.node_pool_name
+#        widget: simple_text
+#        type: string
+#        default: "default"
+#      - name: "Node size"
+#        description: "AKS default nodes virtualmachine size."
+#        key: module.aks.node_size
+#        widget: simple_text
+#        type: string
+#        default: "Standard_DS2_v2"
+#      - name: "Node desired number"
+#        description: "AKS default nodes desired count."
+#        key: module.aks.node_count
+#        widget: simple_text
+#        type: string
+#        default: "1"
+#        required: true
 
 gcp-gke:
   pipeline:
