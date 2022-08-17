@@ -360,7 +360,7 @@ azure-aks:
         key: module.vpc.subnets
         widget: text_area
         type: map
-        default:
+        default: |+
           "nodes": "10.8.0.0/16"
           "pods": "10.9.0.0/16"
           "loadbalancers": "10.11.0.0/16"
