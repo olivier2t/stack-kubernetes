@@ -365,7 +365,7 @@ azure-aks:
 #          "pods": "10.9.0.0/16"
 #          "loadbalancers": "10.11.0.0/16"
         # type: raw
-        default: { "nodes" = "10.8.0.0/16", "pods"  = "10.9.0.0/16", "loadbalancers" = "10.11.0.0/16"}
+        default: { "nodes" = "10.8.0.0/16", "pods"  = "10.9.0.0/16", "loadbalancers" = "10.11.0.0/16",}
 
     aks:
       - name: "AKS cluster network plugin"
