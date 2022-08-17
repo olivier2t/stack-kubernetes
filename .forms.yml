@@ -348,13 +348,13 @@ azure-aks:
         type: string
         default: "($ project $)-($ environment $)"
 
-    vpc:
-      - name: "Address Space"
-        description: "The virtual network address space."
-        key: module.vpc.address_space
-        widget: simple_text
-        type: string
-        default: "10.8.0.0/14"
+#    vpc:
+#      - name: "Address Space"
+#        description: "The virtual network address space."
+#        key: module.vpc.address_space
+#        widget: simple_text
+#        type: string
+#        default: "10.8.0.0/14"
 #      - name: "Private subnets"
 #        description: "The private subnets cidr for the VPC."
 #        key: module.vpc.subnets
@@ -364,7 +364,7 @@ azure-aks:
 #          "nodes": "10.8.0.0/16"
 #          "pods": "10.9.0.0/16"
 #          "loadbalancers": "10.11.0.0/16"
-        # type: raw
+#        # type: raw
 #        default: { "nodes": "10.8.0.0/16", "pods": "10.9.0.0/16", "loadbalancers": "10.11.0.0/16"}
 
     aks:
